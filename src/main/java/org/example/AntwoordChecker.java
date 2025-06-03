@@ -13,7 +13,7 @@ public class AntwoordChecker {
     public void controleerAntwoord(String antwoord) {
         boolean juist = antwoord.equalsIgnoreCase("correct"); // eenvoudige check
 
-        // Notify all observers
+        // observers
         for (AntwoordObserver observer : observers) {
             observer.update(juist);
         }
